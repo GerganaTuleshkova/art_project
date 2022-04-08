@@ -19268,22 +19268,21 @@ a.text-gray-900:focus, a.text-gray-900:hover {
 
 @font-face {
     font-family: HK Grotesk;
-    src: url("http://127.0.0.1:8000/static/fonts/hkgrotesk-bold-webfont.woff2?4583efb92bf578bef8ce04a5c926d56c") format("woff2"), url('http://127.0.0.1:8000/static/fonts/hkgrotesk-bold-webfont.woff") format("woff");
-    /*src: url('http://127.0.0.1:8000/static/fonts/hkgrotesk-bold-webfont.woff2?4583efb92bf578bef8ce04a5c926d56c') format("woff2"), url('../fonts/hkgrotesk-bold-webfont.woff') format("woff");*/
+    src: url(/fonts/hkgrotesk-bold-webfont.woff2?4583efb92bf578bef8ce04a5c926d56c) format("woff2"), url(/fonts/hkgrotesk-bold-webfont.woff?adbf7bd19a4b26bd0dffa4a84c2bf037) format("woff");
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
     font-family: HK Grotesk;
-    src: url('../fonts/hkgrotesk-light-webfont.woff2') format("woff2"), url('../fonts/hkgrotesk-light-webfont.woff') format("woff");
+    src: url(/fonts/hkgrotesk-light-webfont.woff2?f64229250035ca758de11e655c9192ee) format("woff2"), url(/fonts/hkgrotesk-light-webfont.woff?e15891a2351c89d271f0349d20384d6e) format("woff");
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: HK Grotesk;
-    src: url("../fonts/hkgrotesk-regular-webfont.woff") format("woff"), url('../fonts/hkgrotesk-regular-webfont.woff2') format("woff2");
+    src: url(/fonts/hkgrotesk-regular-webfont.woff2?24ab7b0dab32e439439fc5d9aa7266c9) format("woff2"), url(/fonts/hkgrotesk-regular-webfont.woff?1b6dc14a47a08ce2b068f5247a118f29) format("woff");
     font-weight: 400;
     font-style: normal
 }
