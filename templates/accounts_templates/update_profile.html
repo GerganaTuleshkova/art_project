@@ -1,0 +1,25 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <h2 class="text-center">Edit your information</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 mb-4">
+                <form method="post" action="{% url 'update profile' %}" enctype="multipart/form-data">
+
+                    <!-- Form for editing a profile -->
+                    {{ u_form }}
+                    {{ p_form }}
+                    {% csrf_token %}
+
+                    <button class="btn btn-primary mt-2" type="submit">Update</button>
+                    <!-- End Form -->
+                </form>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+{% endblock %}

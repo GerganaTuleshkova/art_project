@@ -1,0 +1,61 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <!-- Hero Section-->
+    <section class="mh-full-screen position-relative darker-overlay d-flex align-items-center justify-content-center">
+        <div class="item home-full-item h-100">
+            <img class="bg-image" src="{% static 'img/banner.jpg' %}" alt="">
+
+            <div class="overlay-content w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-white text-center">
+                            <h1 class="mb-4 display-2 text-uppercase font-weight-bold">ON.ART PORTAL</h1>
+                            <div class="lead max-w-600 mx-auto mb-4"><p>The place to find and show the best art works in
+                                Sofia!</p>
+
+                                <p></p></div>
+                            <p><a class="btn btn-primary" href="{% url 'all paintings' %}">View art works</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid px-5px">
+            <div class="row mx-0">
+                <div class="col-lg-6 my-10px px-5px">
+                    <div class="card border-0 text-white text-center darker-overlay">
+                        <img class="card-img" src="{% static 'img/in_gallery.jpg' %}" alt="">
+
+                        <div class="card-img-overlay d-flex align-items-center overlay-content position-absolute">
+                            <div class="w-100 py-3">
+                                <h2 class="display-4 mb-4">Review Artists</h2>
+                                <a class="btn btn-primary" href="{% url 'artists' %}">Artists</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-0 mt-lg-10px mb-10px px-5px">
+                    <div class="card border-0 text-white text-center darker-overlay">
+                        <img class="card-img" src="{% static 'img/artist_image_2.jpg' %}"
+                             alt="image of an artist painter">
+
+                        <div class="card-img-overlay d-flex align-items-center overlay-content position-absolute">
+                            <div class="w-100 py-3">
+                                <h2 class="display-4 mb-4">Want your works shown here?</h2>
+                                <a class="btn btn-primary"
+                                   href="{% url 'register' %}">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

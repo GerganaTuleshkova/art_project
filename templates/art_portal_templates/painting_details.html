@@ -1,0 +1,47 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container">
+        <div class="d-flex">
+            <div class="d-inline p-2 w-50">
+                <!-- Image -->
+                <img src="{{ painting.photo.url }}"
+                     class="w-100 rounded mx-auto d-block" alt="Painting Photo">
+            </div>
+            <div class="d-inline p-2 w-50">
+                <!-- Description -->
+                <p class="mt-2">Title: {{ painting.title }}</p>
+                {#                <p class="mt-2">Artist: <a href="{% url 'artist_details' painting.artist.pk %}">{{ painting.gallery }}</a>{{ painting.artist.profile|upper }}.</p>#}
+                <p class="mt-2">Artist: <a
+                        href="{% url 'profile details' painting.artist.profile.pk %}">{{ painting.artist.profile|upper }}</a>
+                </p>
+                <p class="mt-2">Size: {{ painting.width }} X {{ painting.height }} cm</p>
+                <p class="mt-2">Base material: {{ painting.base_material|capfirst }}</p>
+                <p class="mt-2">Technique: {{ painting.techniques }}</p>
+                <p class="mt-2">Price: &#8364 {{ painting.price|floatformat:2 }}</p>
+                <!-- Info for the gallery or sold by author -->
+                {% if painting.gallery %}
+                    <p class="mt-2">Gallery: <a href="{% url 'galleries' %}">{{ painting.gallery }}</a></p>
+                {% else %}
+                    <p class="mt-2">Sold by the author directly</p>
+                {% endif %}
+                <!-- End Info for the gallery or sold by author -->
+
+
+                <!-- Likes Button -->
+                {#                {% if not is_owner %}#}
+                {#                    <a href="{% url 'like photo' photo.pk %}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>#}
+                {#                {% endif %}#}
+
+                <!-- Buttons -->
+                {% if is_author %}
+                    <a href="{% url 'edit painting' painting.pk %}" class="btn btn-primary">Edit</a>
+                    <a href="{% url 'delete painting' painting.pk %}" class="btn btn-danger">Delete</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

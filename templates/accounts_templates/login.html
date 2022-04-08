@@ -1,0 +1,37 @@
+{% extends 'base2.html' %}
+{#{% load crispy_forms_filters %}#}
+{#{% load crispy_forms_tags %}#}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <legend class="border-bottom mb-4 text-center">Enter your credentials to login!</legend>
+
+                <!-- Form for loging user -->
+                <form method="post" class="container mb-4 " action="{% url 'login' %}">
+
+                    {% csrf_token %}
+                    <fieldset class="col-lg-8">
+                        {{ form }}
+                        <input type="hidden" name="next" value="{{ request.GET.next }}"/>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary mt-3 ml-3 text-align:center" type="submit">Login</button>
+                    </div>
+                </form>
+                <div class="border-top pt-3">
+                    <medium class="text-muted text-center ml-7 mb-6">
+                        Don't have an account yet? <a class="ml-2" href="{% url 'register' %}">Register</a>
+                    </medium>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+
+{% endblock %}

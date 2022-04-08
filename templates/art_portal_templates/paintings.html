@@ -1,0 +1,88 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div>
+        <!--Filtering section -->
+        <div>
+            <h5 class='text-center mt-3'>Filter on Style</h5>
+            <div class="text-center mb-5">
+                <a href="{% url 'all paintings' %}">All</a>
+                {% for style in styles %}
+                    <a class="ml-2" href="{% url 'all paintings' %}?q={{ style.style_name }}">{{ style.style_name }}</a>
+                {% endfor %}
+                <hr>
+            </div>
+        </div>
+        <!--End Filtering section -->
+
+        <!-- Paintings section -->
+        {% if not paintings %}
+            <!-- If there are NO paintings -->
+            <h1 class='text-center'>No paintings yet</h1>
+
+        {% else %}
+            <!-- If there are paintings -->
+            <h2 class='text-center text-uppercase mb-3'>Art Works:</h2>
+            <div class="container mb-5">
+                <div class="row mb-5">
+                    {% for painting in paintings %}
+                        <!-- Each Card with Info for the painting -->
+                        <div class="card ml-3 mb-3" style="width: 20rem;">
+                            <!-- Image -->
+                            <img src="{{ painting.photo.url }}"
+                                 class="card-img-top h-50" alt="Painting photo">
+                            <div class="card-body">
+                                <!-- Title -->
+                                <p class="card-text">{{ painting.title }}</p>
+                                <!-- Author -->
+                                <p class="card-text text-uppercase font-weight-bold">{{ painting.artist.profile }}</p>
+                                <!-- Dimensions -->
+                                <p class="card-text text-secondary">{{ painting.width }} X {{ painting.height }} cm</p>
+                                <!-- Price -->
+                                <p class="card-text text-secondary"> &#8364 {{ painting.price|floatformat:2 }}</p>
+                                <!-- Button to the Photo Details Page -->
+                                {#                            <a href="{% url 'photo details' photo.pk %}" class="btn btn-primary">See details</a>#}
+                                <a href="{% url 'painting details' painting.pk %}" class="btn btn-primary">See
+                                    details</a>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    {% endfor %}
+
+
+                </div>
+            </div>
+            <!-- End Painting Info -->
+        {% endif %}
+        <!-- End Paintings section -->
+
+        <!-- Pagination -->
+        <div class="container text-center mb-5">
+            {% if is_paginated %}
+                {% if page_obj.has_previous %}
+                    <a class="btn btn-outline-secondary mb-4" href="?page=1">First</a>
+                    <a class="btn btn-outline-secondary mb-4"
+                       href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                    {% if page_obj.number == num %}
+                        <a class="btn btn-outline-secondary mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                        <a class="btn btn-outline-secondary mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                    <a class="btn btn-outline-secondary mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    <a class="btn btn-outline-secondary mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                {% endif %}
+            {% endif %}
+        </div>
+        <!-- End Pagination -->
+
+    </div>
+
+{% endblock %}

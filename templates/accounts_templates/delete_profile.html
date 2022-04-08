@@ -1,0 +1,25 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <h2 class="text-center">Are you sure you want to delete your profile?</h2>
+        <h2 class="text-center">We will miss you :(</h2>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 mb-4">
+                <img src="{{ profile.image.url }}" class="w-50 mx-auto d-block mt-4" alt="Artist Photo">
+                <form method="post" action="{% url 'delete profile' profile.pk %}" enctype="multipart/form-data">
+
+                    <!-- Form for deleting profile -->
+                    {{ form }}
+                    {% csrf_token %}
+
+                    <button class="btn btn-danger mt-2 mb-3" type="submit">Delete</button>
+                </form>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+{% endblock %}

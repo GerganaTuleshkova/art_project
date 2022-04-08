@@ -1,0 +1,53 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+    <div>
+        <!-- If there are NO galleries added by admin -->
+        {% if not galleries %}
+            <h2 class='text-center'>No galleries yet</h2>
+            <h4 class='text-center'>Please call us at + 359 889 890 397 in case you don't see the gallery you work with
+                in
+                our list, adn we will add it.</h4>
+        {% else %}
+            <!-- If there are galleries -->
+            <div>
+                <h2 class='text-center text-uppercase'>Galleries:</h2>
+                <p class='text-center'>Please call us at + 359 889 890 397 in case you don't see the gallery you work
+                    with
+                    in
+                    our list, and we will add it.</p>
+                <div class="container mb-5">
+                    <div class="row mb-5">
+                        {% for gallery in galleries %}
+                            <!-- Each Card with Info for the gallery -->
+                            <div class="card ml-3 mb-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <!-- Name -->
+                                    <p class="card-text text-uppercase font-weight-bold">{{ gallery.name|upper }}</p>
+                                    <!-- Address -->
+                                    <p class="card-text text-secondary">Address:
+                                    <div>
+                                        {{ gallery.address }}
+                                    </div>
+                                    </p>
+                                    <!-- Website -->
+                                    {% if gallery.website %}
+                                        <p class="card-text text-secondary">Website:</p>
+                                        <a href="{{ gallery.website.url }}">{{ gallery.website }}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- End Painting Info -->
+            </div>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

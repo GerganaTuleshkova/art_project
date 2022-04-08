@@ -1,0 +1,62 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- If there are NO artists -->
+    {% if not artists %}
+        <h1 class='text-center'>No artists yet</h1>
+    {% else %}
+        <!-- If there are artists -->
+        <div>
+        <h2 class='text-center text-uppercase'>Artists</h2>
+        <div class="container mb-5 ">
+            <div class="row mb-5">
+                {% for artist in artists %}
+                    <!-- Each Card with Info for the artist -->
+                    <div class="card ml-3 mb-3" style="width: 18rem;">
+                        <!-- Image -->
+                        <img src="{{ artist.image.url }}"
+                             class="img-fluid" alt="Artist {{ artist }} photo">
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="card-text">{{ artist }}</p>
+
+                            <!-- Button to the Artist Details Page -->
+                            <a href="{% url 'profile details' artist.pk %}" class="btn btn-primary">Details</a>
+
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End Artists Info -->
+    {% endif %}
+<!-- Pagination -->
+
+    <div class="container text-center mb-5">
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a class="btn btn-outline-secondary mb-4" href="?page=1">First</a>
+            <a class="btn btn-outline-secondary mb-4"
+               href="?page={{ page_obj.previous_page_number }}">Previous</a>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+                <a class="btn btn-outline-secondary mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <a class="btn btn-outline-secondary mb-4" href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a class="btn btn-outline-secondary mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+            <a class="btn btn-outline-secondary mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+        {% endif %}
+    {% endif %}
+</div>
+</div>
+    </div>
+
+{% endblock %}
