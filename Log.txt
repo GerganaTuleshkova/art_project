@@ -867,3 +867,50 @@ OSError: [WinError 123] The filename, directory name, or volume label syntax is 
 2022-04-08 15:24:13,675 [WARNING] log 35080 39412 Not Found: /fonts/hkgrotesk-light-webfont.woff
 2022-04-08 15:24:13,746 [WARNING] log 35080 39412 Not Found: /fonts/hkgrotesk-regular-webfont.woff
 2022-04-08 15:24:13,808 [WARNING] log 35080 39412 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 15:50:04,724 [WARNING] log 35080 37660 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 15:50:04,762 [WARNING] log 35080 14160 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 15:50:04,762 [WARNING] log 35080 37660 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 15:50:04,862 [WARNING] log 35080 14160 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 15:50:04,894 [WARNING] log 35080 37660 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 15:50:04,909 [WARNING] log 35080 41732 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 15:55:32,075 [WARNING] log 36328 39704 Not Found: /profile/66/
+2022-04-08 15:58:53,445 [WARNING] log 33220 40712 Not Found: /profile/66/
+2022-04-08 15:59:29,651 [WARNING] log 40860 42712 Not Found: /profile/66/
+2022-04-08 16:00:05,227 [WARNING] log 10480 17752 Not Found: /profile/66/
+2022-04-08 16:07:26,692 [ERROR] log 32512 30560 Internal Server Error: /profile/delete/1/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\contrib\auth\mixins.py", line 135, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\views\generic\edit.py", line 208, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\forms.py", line 66, in save
+    p.photo.delete()
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\fields\files.py", line 386, in delete
+    super().delete(save)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\fields\files.py", line 111, in delete
+    self.storage.delete(self.name)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\files\storage.py", line 355, in delete
+    os.remove(name)
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\Users\\gtuleshkova\\PycharmProjects\\SoftUni\\djangoProjects\\art_project\\media\\http:\\monalisa\\url.png'
+2022-04-08 16:07:26,893 [CRITICAL] middlewares 32512 30560 Critical: On.Art error
+2022-04-08 16:07:26,893 [ERROR] middlewares 32512 30560 Error: On.Art error
+2022-04-08 16:07:26,893 [WARNING] middlewares 32512 30560 Warning: On.Art error
+2022-04-08 16:09:46,055 [WARNING] log 43500 41460 Not Found: /profile/66/
+2022-04-08 16:10:12,858 [WARNING] log 34004 3720 Not Found: /profile/66/
+2022-04-08 16:11:00,831 [WARNING] log 10040 39048 Not Found: /profile/66/

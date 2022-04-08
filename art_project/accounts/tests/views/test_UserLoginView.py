@@ -2,26 +2,27 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 
+from art_project.accounts.tests.views.mixins import ArrangeMixin
 
 UserModel = get_user_model()
 
 
-class UserLoginViewTests(TestCase):
-    VALID_USER_CREDENTIALS = {
-        'username': 'testuser',
-        'password': 'asd123',
-        'first_name': 'Test',
-        'last_name': 'Testov',
-        'email': 'testov@mail.com'
-    }
-
-    OTHER_USER_CREDENTIALS = {
-        'username': 'otheruser',
-        'password': 'asd123',
-        'first_name': 'Other',
-        'last_name': 'User',
-        'email': 'other.user@mail.com'
-    }
+class UserLoginViewTests(TestCase, ArrangeMixin):
+    # VALID_USER_CREDENTIALS = {
+    #     'username': 'testuser',
+    #     'password': 'asd123',
+    #     'first_name': 'Test',
+    #     'last_name': 'Testov',
+    #     'email': 'testov@mail.com'
+    # }
+    #
+    # OTHER_USER_CREDENTIALS = {
+    #     'username': 'otheruser',
+    #     'password': 'asd123',
+    #     'first_name': 'Other',
+    #     'last_name': 'User',
+    #     'email': 'other.user@mail.com'
+    # }
 
     def test__expect_correct_template(self):
         user = UserModel.objects.create_user(**self.VALID_USER_CREDENTIALS)
