@@ -2,9 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 
-from art_project.accounts.models import Profile
-from art_project.accounts.tests.views.mixins import ArrangeMixin
-from art_project.art_portal_app.models import Painting, Style, Technique, Gallery
+from art_project.mixins import ArrangeMixin
 
 UserModel = get_user_model()
 
