@@ -74,7 +74,6 @@ def add_painting_view(request):
         form = AddPaintingForm()
     context = {
         'form': form,
-
     }
     return render(request, 'art_portal_templates/add_painting.html', context)
 
@@ -149,4 +148,3 @@ class ArtistsView(views.ListView):
                 artists_with_paintings.append(artist.pk)
         result = artists_query_set.filter(pk__in=artists_with_paintings)
         return result
-
