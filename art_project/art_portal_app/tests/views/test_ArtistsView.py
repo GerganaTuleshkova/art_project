@@ -47,3 +47,4 @@ class ArtistsViewTests(ArrangeMixin, TestCase):
         self.assertEqual(1, artists_with_paintings_counts)
         self.assertIn(profile, response.context['artists'])
         self.assertNotIn(other_profile, response.context['artists'])
+
