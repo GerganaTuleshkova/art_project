@@ -10,7 +10,7 @@ UserModel = get_user_model()
 class ArrangeMixin:
     VALID_USER_CREDENTIALS = {
         'username': 'testuser',
-        'password': 'asd123',
+        'password': 'asd123hrjstl&^',
         'first_name': 'Test',
         'last_name': 'User',
         'email': 'test.user@mail.com'
@@ -18,7 +18,7 @@ class ArrangeMixin:
 
     OTHER_USER_CREDENTIALS = {
         'username': 'otheruser',
-        'password': 'asd123',
+        'password': 'asd123hrjstl&^',
         'first_name': 'Other',
         'last_name': 'User',
         'email': 'other.user@mail.com'

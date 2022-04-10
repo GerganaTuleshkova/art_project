@@ -950,3 +950,372 @@ OSError: [WinError 123] The filename, directory name, or volume label syntax is 
 2022-04-08 16:54:33,761 [WARNING] log 44748 40048 Not Found: /fonts/hkgrotesk-bold-webfont.woff
 2022-04-08 16:54:33,802 [WARNING] log 44748 40048 Not Found: /fonts/hkgrotesk-regular-webfont.woff
 2022-04-08 16:54:33,802 [WARNING] log 44748 37408 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:00:40,960 [WARNING] log 44748 37100 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:00:40,963 [WARNING] log 44748 43228 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:00:40,967 [WARNING] log 44748 34456 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:00:41,157 [WARNING] log 44748 43228 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:00:41,162 [WARNING] log 44748 34456 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:00:41,166 [WARNING] log 44748 37100 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:20:03,280 [WARNING] log 44748 41628 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:20:03,295 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:20:03,327 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:20:03,380 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:20:03,380 [WARNING] log 44748 41628 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:20:03,396 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:20:37,444 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:20:37,460 [WARNING] log 44748 41628 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:20:37,460 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:20:37,482 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:20:37,482 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:20:37,482 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:20:40,703 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:20:40,703 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:20:40,703 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:20:40,741 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:20:40,741 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:20:40,741 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:20:43,465 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:20:43,465 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:20:43,465 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:20:43,528 [WARNING] log 44748 35464 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:20:43,528 [WARNING] log 44748 39436 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:20:43,543 [WARNING] log 44748 5284 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:36:25,283 [ERROR] log 10512 41324 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 71, in profile_update_view
+    user = u_form.save()
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\forms\models.py", line 539, in save
+    raise ValueError(
+ValueError: The User could not be changed because the data didn't validate.
+2022-04-08 17:36:25,421 [CRITICAL] middlewares 10512 41324 Critical: On.Art error
+2022-04-08 17:36:25,421 [ERROR] middlewares 10512 41324 Error: On.Art error
+2022-04-08 17:36:25,421 [WARNING] middlewares 10512 41324 Warning: On.Art error
+2022-04-08 17:41:09,726 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:09,757 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:41:09,765 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:09,767 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:09,937 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:41:09,950 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:41:14,547 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:14,547 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:41:14,547 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:14,578 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:14,578 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:41:14,578 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:41:16,353 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:16,353 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:41:16,437 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:16,469 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:16,500 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:41:16,553 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:41:18,105 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:41:18,105 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:18,111 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:18,143 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:41:18,143 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:18,143 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:41:39,061 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:41:39,076 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:39,076 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:39,099 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:41:39,099 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:41:39,114 [WARNING] log 44748 32144 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:42,111 [ERROR] log 44748 36260 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:41:42,127 [CRITICAL] middlewares 44748 36260 Critical: On.Art error
+2022-04-08 17:41:42,127 [ERROR] middlewares 44748 36260 Error: On.Art error
+2022-04-08 17:41:42,127 [WARNING] middlewares 44748 36260 Warning: On.Art error
+2022-04-08 17:41:42,174 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:41:42,174 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:41:42,205 [WARNING] log 44748 36260 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:41:42,211 [WARNING] log 44748 34200 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:43:03,112 [ERROR] log 36900 11448 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:43:03,181 [CRITICAL] middlewares 36900 11448 Critical: On.Art error
+2022-04-08 17:43:03,181 [ERROR] middlewares 36900 11448 Error: On.Art error
+2022-04-08 17:43:03,181 [WARNING] middlewares 36900 11448 Warning: On.Art error
+2022-04-08 17:45:42,623 [ERROR] log 14884 38220 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:45:42,686 [CRITICAL] middlewares 14884 38220 Critical: On.Art error
+2022-04-08 17:45:42,686 [ERROR] middlewares 14884 38220 Error: On.Art error
+2022-04-08 17:45:42,686 [WARNING] middlewares 14884 38220 Warning: On.Art error
+2022-04-08 17:46:46,099 [WARNING] log 44748 39564 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:46:46,099 [WARNING] log 44748 37464 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:46:46,453 [WARNING] log 44748 37464 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:46:46,484 [WARNING] log 44748 37464 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:46:47,314 [WARNING] log 44748 37464 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:46:47,335 [WARNING] log 44748 37464 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-08 17:47:33,009 [ERROR] log 42756 33776 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:47:33,087 [CRITICAL] middlewares 42756 33776 Critical: On.Art error
+2022-04-08 17:47:33,087 [ERROR] middlewares 42756 33776 Error: On.Art error
+2022-04-08 17:47:33,087 [WARNING] middlewares 42756 33776 Warning: On.Art error
+2022-04-08 17:49:37,286 [ERROR] log 39184 14884 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:49:37,364 [CRITICAL] middlewares 39184 14884 Critical: On.Art error
+2022-04-08 17:49:37,364 [ERROR] middlewares 39184 14884 Error: On.Art error
+2022-04-08 17:49:37,364 [WARNING] middlewares 39184 14884 Warning: On.Art error
+2022-04-08 17:52:56,003 [ERROR] log 44748 13924 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-08 17:52:56,003 [CRITICAL] middlewares 44748 13924 Critical: On.Art error
+2022-04-08 17:52:56,003 [ERROR] middlewares 44748 13924 Error: On.Art error
+2022-04-08 17:52:56,003 [WARNING] middlewares 44748 13924 Warning: On.Art error
+2022-04-08 17:52:56,172 [WARNING] log 44748 13924 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:52:56,188 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:52:56,303 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:52:56,303 [WARNING] log 44748 13924 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:52:56,573 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-08 17:52:56,573 [WARNING] log 44748 13924 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-08 17:52:56,673 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-08 17:52:56,673 [WARNING] log 44748 13924 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-08 17:52:57,101 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-08 17:52:57,128 [WARNING] log 44748 44372 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 11:46:52,809 [ERROR] log 35888 41648 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:46:53,673 [CRITICAL] middlewares 35888 41648 Critical: On.Art error
+2022-04-10 11:46:53,673 [ERROR] middlewares 35888 41648 Error: On.Art error
+2022-04-10 11:46:53,673 [WARNING] middlewares 35888 41648 Warning: On.Art error
+2022-04-10 11:51:15,326 [ERROR] log 35676 10216 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:51:15,411 [CRITICAL] middlewares 35676 10216 Critical: On.Art error
+2022-04-10 11:51:15,411 [ERROR] middlewares 35676 10216 Error: On.Art error
+2022-04-10 11:51:15,411 [WARNING] middlewares 35676 10216 Warning: On.Art error
+2022-04-10 11:51:41,501 [ERROR] log 44748 36256 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:51:41,501 [CRITICAL] middlewares 44748 36256 Critical: On.Art error
+2022-04-10 11:51:41,501 [ERROR] middlewares 44748 36256 Error: On.Art error
+2022-04-10 11:51:41,501 [WARNING] middlewares 44748 36256 Warning: On.Art error
+2022-04-10 11:51:42,002 [WARNING] log 44748 36256 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:51:42,056 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:51:42,171 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:51:42,171 [WARNING] log 44748 36256 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:51:42,272 [WARNING] log 44748 36256 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:51:42,272 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:51:42,403 [WARNING] log 44748 36256 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:51:42,403 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:51:42,974 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 11:51:43,005 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 11:52:47,867 [ERROR] log 44748 36256 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:52:47,875 [CRITICAL] middlewares 44748 36256 Critical: On.Art error
+2022-04-10 11:52:47,875 [ERROR] middlewares 44748 36256 Error: On.Art error
+2022-04-10 11:52:47,875 [WARNING] middlewares 44748 36256 Warning: On.Art error
+2022-04-10 11:52:47,987 [WARNING] log 44748 36256 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:52:47,987 [WARNING] log 44748 41716 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:52:48,075 [WARNING] log 44748 41716 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:52:48,075 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:52:48,499 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:52:48,499 [WARNING] log 44748 41716 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:52:48,579 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:52:48,587 [WARNING] log 44748 41716 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:52:49,075 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 11:52:49,107 [WARNING] log 44748 46296 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 11:53:43,683 [ERROR] log 45516 30680 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:53:43,752 [CRITICAL] middlewares 45516 30680 Critical: On.Art error
+2022-04-10 11:53:43,752 [ERROR] middlewares 45516 30680 Error: On.Art error
+2022-04-10 11:53:43,752 [WARNING] middlewares 45516 30680 Warning: On.Art error
+2022-04-10 11:55:35,043 [ERROR] log 13084 44896 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 11:55:35,112 [CRITICAL] middlewares 13084 44896 Critical: On.Art error
+2022-04-10 11:55:35,112 [ERROR] middlewares 13084 44896 Error: On.Art error
+2022-04-10 11:55:35,112 [WARNING] middlewares 13084 44896 Warning: On.Art error
+2022-04-10 11:56:38,479 [WARNING] log 44748 43952 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:56:38,495 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 11:56:38,580 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:56:38,765 [WARNING] log 44748 43952 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 11:56:38,765 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:56:38,896 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:56:39,567 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 11:56:39,567 [WARNING] log 44748 39268 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 11:56:39,567 [WARNING] log 44748 43952 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 11:56:39,668 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 11:56:39,701 [WARNING] log 44748 46508 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 11:56:39,709 [WARNING] log 44748 39268 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 12:02:33,187 [ERROR] log 43948 45152 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 12:02:33,272 [CRITICAL] middlewares 43948 45152 Critical: On.Art error
+2022-04-10 12:02:33,272 [ERROR] middlewares 43948 45152 Error: On.Art error
+2022-04-10 12:02:33,272 [WARNING] middlewares 43948 45152 Warning: On.Art error
+2022-04-10 12:05:23,352 [ERROR] log 40268 46484 Internal Server Error: /profile/update/
+Traceback (most recent call last):
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\art_project\accounts\views.py", line 64, in profile_update_view
+    profile = Profile.objects.get(pk=profile_pk)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\gtuleshkova\PycharmProjects\SoftUni\djangoProjects\art_project\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+art_project.accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-10 12:05:23,437 [CRITICAL] middlewares 40268 46484 Critical: On.Art error
+2022-04-10 12:05:23,437 [ERROR] middlewares 40268 46484 Error: On.Art error
+2022-04-10 12:05:23,437 [WARNING] middlewares 40268 46484 Warning: On.Art error
+2022-04-10 12:05:37,440 [WARNING] log 44748 40564 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 12:05:39,043 [WARNING] log 44748 40564 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 12:05:39,043 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 12:05:39,059 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 12:05:39,097 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 12:05:39,112 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 12:05:39,112 [WARNING] log 44748 40564 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 12:05:41,307 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 12:05:41,307 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 12:05:41,345 [WARNING] log 44748 40564 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 12:05:41,360 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 12:05:41,360 [WARNING] log 44748 26432 Not Found: /fonts/hkgrotesk-regular-webfont.woff
+2022-04-10 12:05:41,376 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 12:05:43,422 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-bold-webfont.woff2
+2022-04-10 12:05:43,422 [WARNING] log 44748 26432 Not Found: /fonts/hkgrotesk-light-webfont.woff2
+2022-04-10 12:05:43,422 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-regular-webfont.woff2
+2022-04-10 12:05:43,444 [WARNING] log 44748 35340 Not Found: /fonts/hkgrotesk-bold-webfont.woff
+2022-04-10 12:05:43,460 [WARNING] log 44748 36784 Not Found: /fonts/hkgrotesk-light-webfont.woff
+2022-04-10 12:05:43,476 [WARNING] log 44748 26432 Not Found: /fonts/hkgrotesk-regular-webfont.woff

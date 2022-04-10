@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase, Client
 from django.urls import reverse
 
+from art_project.accounts.forms import UserRegisterForm
 from art_project.accounts.models import Profile
 from art_project.accounts.tests.views.mixins import ArrangeMixin
 from art_project.art_portal_app.models import Painting, Style, Technique, Gallery
@@ -15,9 +16,18 @@ class RegisterViewTests(ArrangeMixin, TestCase):
 
         response = self.client.post(reverse('register'), self.VALID_USER_CREDENTIALS, follow=True)
         self.assertTemplateUsed(response, 'accounts_templates/register.html')
+        self.failUnless(isinstance(response.context['form'], UserRegisterForm))
 
     def test_when_all_valid__expect_user_to_be_created_and_logged(self):
+        # does not work !!!
         response = self.client.post(reverse('register'), self.VALID_USER_CREDENTIALS, follow=True)
-        users = UserModel.objects.all()
-        self.assertTrue(response.context['user'])
-        self.assertTrue(response.context['user'].is_authenticated)
+        users_count = UserModel.objects.count()
+
+        self.assertEqual(1, users_count)
+
+    def test_valid_credentials__expect_to_be_redirected_to_home(self):
+        # does not work !!!
+        response = self.client.post(reverse('register'), self.VALID_USER_CREDENTIALS, follow=True)
+        user = response.context['user']
+
+        self.assertRedirects(response, reverse('profile details', kwargs={'pk': user.pk}), status_code=302)
