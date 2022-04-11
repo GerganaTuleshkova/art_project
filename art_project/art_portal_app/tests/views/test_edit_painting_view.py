@@ -32,7 +32,24 @@ class EditPaintingViewTests(ArrangeMixin, TestCase):
         user, _ = self._create_valid_user_and_profile()
         self.client.login(**self.VALID_USER_CREDENTIALS)
         painting = self._create_painting(user)
+        self._create_style()
+        self._create_technique()
+        self._create_gallery()
+        updated_painting_data = {
+            'title': 'Sunflowers',
+            'width': 100,
+            'height': 100,
+            'base_material': Painting.CANVAS,
+            'photo': 'monalisa.png',
+            'price': 1000,
+            'main_colors': 1,
+            'style': 1,
+            'techniques': 1,
+            'gallery': 1,
+        }
 
-        response = self.client.post(reverse('edit painting', kwargs={'pk': painting.pk}), title='Sunflowers')
+        self.client.post(reverse('edit painting', kwargs={'pk': painting.pk}), updated_painting_data)
 
-        print(painting)
+        updated_painting = Painting.objects.first()
+
+        self.assertEqual(updated_painting_data['title'], updated_painting.title)
