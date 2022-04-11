@@ -36,7 +36,7 @@ class UserLoginViewTests(TestCase, ArrangeMixin):
         self.assertRedirects(response, reverse('home'), status_code=302)
 
     def test_invalid_credentials__expect_reload(self):
-        user = UserModel.objects.create_user(**self.VALID_USER_CREDENTIALS)
+        UserModel.objects.create_user(**self.VALID_USER_CREDENTIALS)
 
         response = self.client.post(reverse('login'), self.OTHER_USER_CREDENTIALS, follow=True)
 
