@@ -96,6 +96,9 @@ class Profile(models.Model):
             img.thumbnail(output_size)
             img.save(self.image.path)
 
+    class Meta:
+        ordering = ['last_name']
+
     def __str__(self):
         if self.first_name or self.last_name:
             return f'{self.first_name} {self.last_name}'
