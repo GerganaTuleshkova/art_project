@@ -40,17 +40,6 @@ class PaintingAddViewTests(ArrangeMixin, TestCase):
 
         self.assertTemplateUsed(response, 'art_portal_templates/add_painting.html')
 
-    def test_with_valid_input_expect_redirect_to_painting_details(self):
-        user, _ = self._create_valid_user_and_profile()
-        self.client.login(**self.VALID_USER_CREDENTIALS)
-        self._create_style()
-        self._create_technique()
-        self._create_gallery()
-        response = self.client.post(reverse('add painting'), self.VALID_PAINTING_FULL_DATA)
-        painting = Painting.objects.first()
-
-        self.assertRedirects(response, reverse('painting details', kwargs={'pk': painting.pk}), status_code=302)
-
     def test_with_valid_input_expect_painting_to_be_added(self):
         user, _ = self._create_valid_user_and_profile()
         self.client.login(**self.VALID_USER_CREDENTIALS)
@@ -62,3 +51,14 @@ class PaintingAddViewTests(ArrangeMixin, TestCase):
 
         self.assertEqual(self.VALID_PAINTING_FULL_DATA['title'], painting.title)
         self.assertEqual(1, len(Painting.objects.all()))
+
+    def test_with_valid_input_expect_redirect_to_painting_details(self):
+        user, _ = self._create_valid_user_and_profile()
+        self.client.login(**self.VALID_USER_CREDENTIALS)
+        self._create_style()
+        self._create_technique()
+        self._create_gallery()
+        response = self.client.post(reverse('add painting'), self.VALID_PAINTING_FULL_DATA)
+        painting = Painting.objects.first()
+
+        self.assertRedirects(response, reverse('painting details', kwargs={'pk': painting.pk}), status_code=302)

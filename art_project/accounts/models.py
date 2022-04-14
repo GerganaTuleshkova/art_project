@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.auth import models as auth_models, get_user_model
 from PIL import Image
 
-from art_project.accounts.managers import OnartUserManager
+
 
 UserModel = get_user_model()
 #
