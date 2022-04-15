@@ -3,9 +3,9 @@ from django.db import models
 from django.contrib.auth import models as auth_models, get_user_model
 from PIL import Image
 
-
-
 UserModel = get_user_model()
+
+
 #
 #
 # class OnartUser(auth_models.AbstractBaseUser, auth_models.PermissionsMixin):
@@ -35,7 +35,7 @@ class Profile(models.Model):
         UserModel,
         on_delete=models.CASCADE,
         primary_key=True,
-        )
+    )
 
     first_name = models.CharField(
         max_length=150,
