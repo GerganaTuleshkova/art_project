@@ -23,3 +23,4 @@ class ProfileUpdateFormTests(TestCase):
         form = ProfileUpdateForm(data=invalid_profile_data)
 
         self.assertFalse(form.is_valid())
+

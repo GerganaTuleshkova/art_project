@@ -24,3 +24,4 @@ class UserUpdateFormTests(TestCase):
         }
         form = UserUpdateForm(data=invalid_user_credentials)
         self.assertFalse(form.is_valid())
+

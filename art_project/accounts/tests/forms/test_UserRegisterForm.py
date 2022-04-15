@@ -28,3 +28,4 @@ class UserRegisterFormTests(TestCase):
         }
         form = UserRegisterForm(data=invalid_user_credentials)
         self.assertFalse(form.is_valid())
+
