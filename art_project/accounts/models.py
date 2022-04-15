@@ -38,11 +38,11 @@ class Profile(models.Model):
         )
 
     first_name = models.CharField(
-        max_length=30,
+        max_length=150,
     )
 
     last_name = models.CharField(
-        max_length=30,
+        max_length=150,
     )
 
     image = models.ImageField(
