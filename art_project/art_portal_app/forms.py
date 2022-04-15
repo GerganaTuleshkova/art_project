@@ -17,7 +17,7 @@ class AddPaintingForm(forms.ModelForm):
 
         widgets = {
             'price': forms.TextInput(
-                attrs={'placeholder': 'Price must be a positive number'}),
+                attrs={'placeholder': 'Price must be a positive number. Currency is Euro'}),
             'width': forms.TextInput(
                 attrs={'placeholder': 'in centimetres'}),
             'height': forms.TextInput(
